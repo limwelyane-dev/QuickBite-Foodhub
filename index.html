@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickBite Foodhub</title>
+  <link rel="stylesheet" href="business.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+
+    <div class="brand">
+      <h1>QuickBite <span>Foodhub</span></h1>
+    </div>
+
+    <div class="sidehead">
+      <div class="navlist">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#hero">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#" id="loginBtn">LogIn</a></li>
+        </ul>
+      </div>
+      <div class="searchbar">
+          <form>
+            <input type="search" id="searchInput" name="search" placeholder="Ex. Chicken...">
+            <input type="submit" value="Search">
+        </form>
+      </div>
+
+      <div class="header-actions">
+        <button id="cartToggle" class="btn cart-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="firstspace"></div>
+    <div class="first">
+      
+      <div class="headtext">
+        <h1><span>Add</span> Your Cravings Here!</h1>
+      </div>
+
+        <div class="ordernow">
+          <p>Welcome to our food website, where every dish is made fresh with quality ingredients and crafted <br> to satisfy your cravings. Enjoy delicious meals that are simple, affordable, and full of flavor.</p>
+          <button><a href="#hero" style="text-decoration: none; color: white;">Order Now</a></button>
+        </div>
+
+        <div class="icons">
+          <a href="https://www.facebook.com"><img src="icon-fb.png" alt="facebook icon"></a>
+          <a href="https://www.instagram.com"><img src="icon-ig.png" alt="instagram icon"></a>
+          <a href="https://www.twitter.com"><img src="icon-tw.png" alt="twitter icon"></a>
+        </div>
+
+      <div class="side_img">
+        <img src="platebackground.png" alt="" class="autorotate">
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="platedesign">
+        <img src="plate_design.png" alt="">
+      </div>
+      <div class="ads-text">
+        <h2>About QuickBite Foodhub</h2>
+        <p>We serve fresh, tasty meals made with quality ingredients. Enjoy delicious dishes that are simple, satisfying, and affordable made to satisfy your cravings every day!</p>
+        <hr><h3>Why People choose us?</h3>
+        <ul>
+          <li>Delicious & Unique Flavors</li>
+          <li>Affordable Prices</li>
+          <li>Fresh & High-Quality Ingredients</li>
+          <li>Customer Satisfaction First</li>
+          <li>Fast & Reliable Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="hero" id="hero">
+      <div class="space"></div>
+      <h2>MENU</h2>
+      <p>We Offer quality Foods</p>
+      <div class="menu">
+        <div class="menuItem">
+          <a href="#chicken2"><img src="chickenmenu.avif" alt=""></a>
+          <h3>Chicken</h3>
+        </div>
+
+        <div class="menuItem">
+          <a href="#pork2"><img src="porkmenu.jpg" alt=""></a>
+          <h3>Pork</h3>
+        </div>
+        <div class="menuItem">
+          <a href="#drinks2"><img src="drinksmenu.jpg" alt=""></a>
+          <h3>Drinks</h3>
+        </div>
+        <div class="menuItem">
+          <a href="#dessert2"><img src="dessertmenu.jpg" alt=""></a>
+          <h3>Dessert</h3>
+        </div>
+      </div>
+    </section>
+    
+    <div class="firstspace1" id="chicken2"></div>
+    <div class="cardhead" id="chicken1"><h2>Chicken</h2><p>We Offer quality Foods</p></div>
+    <hr id="line">
+    <section class="products-grid" id="chicken" aria-label="Chicken products">
+      <h2 class="section-title">Chicken</h2>
+      
+    </section>
+
+    <div class="firstspace1" id="pork2"></div>
+    <div class="cardhead" id="pork1"><h2>Pork</h2><p>We Offer quality Foods</p></div>
+    <hr id="line">
+    <section class="products-grid" id="pork" aria-label="Pork products">
+      
+      <h2 class="section-title">Pork</h2>
+    </section>
+
+    <div class="firstspace1" id="dessert2"></div>
+    <div class="cardhead" id="dessert1"><h2>Dessert</h2><p>We Offer quality Foods</p></div>
+    <hr id="line">
+    <section class="products-grid" id="desserts" aria-label="desserts products">
+      
+      <h2 class="section-title">Dessert</h2>
+    </section>
+
+    <div class="firstspace1" id="drinks2"></div>
+    <div class="cardhead" id="drinks1"><h2>Drinks</h2><p>We Offer quality Drinks</p></div>
+    <hr id="line">
+    <section class="products-grid" id="drinks" aria-label="Drink products">
+      <h2 class="section-title">Drinks</h2>
+    </section>
+
+    <div class="footerText"><strong>Deliciousness delivered daily.</strong></div>
+  </main>
+
+  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="closeCart" class="btn small">✕</button>
+  </div>
+
+  <div id="cartItems" class="cart-items">
+  </div>
+
+  <div class="cart-summary">
+    <div class="summary-row">
+      <span>Items</span><span id="itemsCount">0</span>
+    </div>
+
+    <div class="summary-row">
+      <strong>Total</strong><strong id="cartTotal">₱0</strong>
+    </div>
+
+
+    <div class="checkout-controls">
+      <button id="checkoutBtn" class="btn wide primary">Checkout</button>
+    </div>
+
+
+    <p class="note">Click checkout to view your receipt.</p>
+  </div>
+</aside>
+
+  <footer class="site-footer">
+    <div class="brand">
+      <h1>QuickBite <span>Foodhub</span></h1>
+    
+      <div class="icons">
+        <a href="https://www.facebook.com"><img src="facebookIcon.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com"><img src="instagramIcon.png" alt="instagram icon"></a>
+        <a href="https://www.twitter.com"><img src="twitter.png" alt="twitter icon"></a>
+      </div>
+    </div>
+    <div class="contact">
+      <h2>Contact:</h2>
+      <p >Email :  <a href="gmail.com">QuickBite@gmail.com</a></p>
+      <p >/ 0939-882-2282</p>
+      <p>Cagayan de Oro City, Philippines</p>
+    </div>
+  </footer>
+  </div>
+  <div class="authPage" id="login" style="display: none;">
+    <button id="closeLogin" class="close-modal">✕</button>
+
+                <form id="loginForm" class="authBox">
+                    <h2>Sign In</h2>
+
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+
+                    <button type="submit">Login</button>
+
+                    <p>Don't have an account? 
+                        <a href="#" onclick="showSignup()">Sign Up</a>
+                    </p>
+                </form>
+
+                <!-- SIGN UP -->
+                <form id="signupForm" class="authBox" style="display:none;">
+                    <h2>Sign Up</h2>
+
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+
+                    <button type="submit">Create Account</button>
+
+                    <p>Already have an account? 
+                        <a href="#" onclick="showLogin()">Sign In</a>
+                    </p>
+                </form>
+
+  </div>
+  <div id="receiptModal" class="receipt-modal">
+  <div class="receipt-box">
+    <button class="close-btn" onclick="closeReceipt()">✖</button>
+    
+    <h2>Order Receipt</h2>
+    <div id="receiptItems"></div>
+
+    <div class="receipt-total">
+      <strong>Total: ₱<span id="receiptTotal">0</span></strong>
+    </div>
+
+    <button onclick="printReceipt()" class="print-btn">Print</button>
+  </div>
+</div>
+  
+
+  <script>
+      const closeLoginBtn = document.getElementById("closeLogin");
+      const loginBtn = document.getElementById("loginBtn");
+      const loginModal = document.getElementById("login");
+
+      // Show login modal
+      loginBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        loginModal.style.display = "flex";
+        document.body.classList.add("modal-open");
+      });
+
+      // Close modal when clicking outside
+      loginModal.addEventListener("click", (e) => {
+        if (e.target === loginModal) {
+          loginModal.style.display = "none";
+          document.body.classList.remove("modal-open");
+        }
+      });
+
+      closeLoginBtn.addEventListener("click", () => {
+        loginModal.style.display = "none";
+        document.body.classList.remove("modal-open");
+      });
+      
+      function showSignup() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("signupForm").style.display = "block";
+    }
+
+    function showLogin() {
+      document.getElementById("signupForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+    }
+
+      const products = [
+        { id: 1, name: "Chicken Adobo", price: 120, img: "chicken adobo.jpg", category: "chicken" },
+        { id: 2, name: "Roasted Chicken", price: 150, img: "roasted chicken.webp", category: "chicken" },
+        { id: 3, name: "Pork Steak", price: 200, img: "Pork Steak.jpg", category: "pork" },
+        { id: 4, name: "Ground Pork", price: 85, img: "ground pork.jpg", category: "pork" },
+        { id: 5, name: "Buko Shake", price: 50, img: "BukoShake.jpg", category: "drinks" },
+        { id: 6, name: "Chicken Bucket /w fries", price: 299, img: "bucket.avif", category: "chicken" },
+        { id: 7, name: "Fried Chicken", price: 45, img: "FriedChicken.avif", category: "chicken" },
+        { id: 8, name: "Coke", price: 20, img: "coke1.jpg", category: "drinks" },
+        { id: 9, name: "Mango Shake", price: 50, img: "mangoShake.jpg", category: "drinks" },
+        { id: 10, name: "Water", price: 20, img: "water.jpg", category: "drinks" },
+        { id: 11, name: "Chess Cake", price: 45, img: "chesscake.jpg", category: "dessert" },
+        { id: 12, name: "Pan Cakes", price: 50, img: "pancakes.jpg", category: "dessert" },
+        { id: 13, name: "Mango Float", price: 150, img: "mangofloat.jpg", category: "dessert" },
+        { id: 14, name: "Croissant Sandwich", price: 90, img: "croissant sandwich.jpg", category: "dessert" },
+        { id: 15, name: "Pork bbq", price: 30, img: "barbecue.jpg", category: "pork" },
+        { id: 16, name: "Pork Adobo", price: 50, img: "Pork-Adobo_2.webp", category: "pork" }
+      ];
+
+      let cart = [];
+
+      const dessertRoot = document.getElementById("desserts");
+      const porkRoot = document.getElementById("pork");
+      const chickenRoot = document.getElementById("chicken");
+      const drinkRoot = document.getElementById("drinks");
+
+      const cartToggleBtn = document.getElementById("cartToggle");
+      const cartSidebar = document.getElementById("cartSidebar");
+      const closeCartBtn = document.getElementById("closeCart");
+
+      const cartCount = document.getElementById("cartCount");
+      const cartItemsEl = document.getElementById("cartItems");
+      const cartTotalEl = document.getElementById("cartTotal");
+      const itemsCountEl = document.getElementById("itemsCount");
+
+      const checkoutBtn = document.getElementById("checkoutBtn");
+
+      // RECEIPT ELEMENTS
+      const receiptModal = document.getElementById("receiptModal");
+      const receiptItems = document.getElementById("receiptItems");
+      const receiptTotal = document.getElementById("receiptTotal");
+
+      renderProducts();
+      updateCartUI();
+
+      function renderProducts() {
+        chickenRoot.innerHTML = "";
+        drinkRoot.innerHTML = "";
+        dessertRoot.innerHTML = "";
+        porkRoot.innerHTML = "";
+
+        products.forEach(p => {
+          const card = document.createElement("article");
+          card.className = "card";
+          card.innerHTML = `
+            <img src="${p.img}" alt="${escapeHtml(p.name)}" />
+            <h3>${escapeHtml(p.name)}</h3>
+            <p class="desc">High-quality Foods</p>
+            <div class="actions">
+              <div class="price small">₱${formatNumber(p.price)}</div>
+              <button onclick="addToCart(${p.id})">Add to cart</button>
+            </div>
+          `;
+
+          if (p.category === "chicken") chickenRoot.appendChild(card);
+          else if (p.category === "drinks") drinkRoot.appendChild(card);
+          else if (p.category === "dessert") dessertRoot.appendChild(card);
+          else if (p.category === "pork") porkRoot.appendChild(card);
+        });
+      }
+
+      // CART FUNCTIONS
+      function addToCart(id) {
+        const item = cart.find(c => c.id === id);
+        if (item) item.qty++;
+        else cart.push({ id, qty: 1 });
+        updateCartUI();
+        openCart();
+      }
+
+      function removeFromCart(id) {
+        cart = cart.filter(c => c.id !== id);
+        updateCartUI();
+      }
+
+      function changeQty(id, delta) {
+        const item = cart.find(c => c.id === id);
+        if (!item) return;
+        item.qty += delta;
+        if (item.qty <= 0) removeFromCart(id);
+        updateCartUI();
+      }
+
+      function cartDetails() {
+        return cart.map(c => ({ ...c, product: products.find(p => p.id === c.id) }));
+      }
+
+      function cartTotals() {
+        const details = cartDetails();
+        return {
+          items: details.reduce((s, i) => s + i.qty, 0),
+          total: details.reduce((s, i) => s + i.qty * i.product.price, 0)
+        };
+      }
+
+      function updateCartUI() {
+        const details = cartDetails();
+        cartItemsEl.innerHTML = "";
+
+        if (!details.length) {
+          cartItemsEl.innerHTML = `<p>Your cart is empty</p>`;
+        } else {
+          details.forEach(d => {
+            const row = document.createElement("div");
+            row.className = "cart-item";
+            row.innerHTML = `
+              <div style="width:64px;height:64px;border-radius:8px;overflow:hidden">
+                <img src="${d.product.img}" alt="${escapeHtml(d.product.name)}"
+                    style="width:100%;height:100%;object-fit:cover" />
+              </div>
+
+              <div class="meta">
+                <div style="font-weight:700">${escapeHtml(d.product.name)}</div>
+                <div style="color:var(--muted);font-size:13px">
+                  ₱${formatNumber(d.product.price)} • ${d.qty} pcs
+                </div>
+
+                <div class="qty-controls" style="margin-top:8px">
+                  <button onclick="changeQty(${d.id}, -1)">−</button>
+                  <span>${d.qty}</span>
+                  <button onclick="changeQty(${d.id}, 1)">+</button>
+                  <button class="remove-link" onclick="removeFromCart(${d.id})">Remove</button>
+                </div>
+              </div>
+            `;
+            cartItemsEl.appendChild(row);
+          });
+        }
+
+        const totals = cartTotals();
+        cartCount.innerText = totals.items;
+        itemsCountEl.innerText = totals.items;
+        cartTotalEl.innerText = `₱${formatNumber(totals.total)}`;
+      }
+
+      // CART SIDEBAR
+      function openCart() {
+        cartSidebar.classList.add("open");
+      }
+
+      function closeCart() {
+        cartSidebar.classList.remove("open");
+      }
+
+      cartToggleBtn.addEventListener("click", () => cartSidebar.classList.toggle("open"));
+      closeCartBtn.addEventListener("click", closeCart);
+
+      checkoutBtn.addEventListener("click", () => {
+        if (!cart.length) {
+          alert("Your cart is empty.");
+          return;
+        }
+
+        receiptItems.innerHTML = "";
+        let total = 0;
+
+        cartDetails().forEach(item => {
+          const div = document.createElement("div");
+          div.className = "receipt-item";
+          div.innerHTML = `
+            <span>${item.product.name} x${item.qty}</span>
+            <span>₱${formatNumber(item.qty * item.product.price)}</span>
+          `;
+          receiptItems.appendChild(div);
+          total += item.qty * item.product.price;
+        });
+
+        receiptTotal.innerText = formatNumber(total);
+        receiptModal.style.display = "flex";
+      });
+
+      function closeReceipt() {
+        receiptModal.style.display = "none";
+      }
+
+      function printReceipt() {
+        window.print();
+      }
+
+      function formatNumber(n) {
+        return Number(n).toLocaleString("en-PH");
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g,"&amp;")
+          .replace(/</g,"&lt;")
+          .replace(/>/g,"&gt;")
+          .replace(/"/g,"&quot;");
+      }
+
+      window.addToCart = addToCart;
+      window.changeQty = changeQty;
+      window.removeFromCart = removeFromCart;
+      window.closeReceipt = closeReceipt;
+      window.printReceipt = printReceipt;
+
+</script>
+</body>
+</html>
