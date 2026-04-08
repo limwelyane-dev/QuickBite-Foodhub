@@ -143,12 +143,10 @@ body{
     background-color: var(--accent-2);
 }
 
-/* Hover effect */
 .searchbar input[type="submit"]:hover {
     background: rgb(110, 80, 22);
 }
 
-/* Focus effect */
 .searchbar input[type="search"]:focus {
     width: 300px;
     transition: 0.3s;
@@ -551,6 +549,7 @@ body.modal-open > *:not(#login) {
   padding-left: 20px;
 }
 
+/* Section Titles */
 .section-title{
   margin:20px 0 10px 16px;
   font-size:18px;
@@ -580,6 +579,9 @@ body.modal-open > *:not(#login) {
   align-items: center;
   gap: 10px;
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
 @media (max-width: 768px) {
 
   /* HEADER */
@@ -671,6 +673,7 @@ body.modal-open > *:not(#login) {
     width: 100%;
   }
 
+  /* MENU */
   .hero .menu {
     flex-wrap: wrap;
     gap: 10px;
@@ -686,6 +689,7 @@ body.modal-open > *:not(#login) {
     height: 100%;
   }
 
+  /* PRODUCTS GRID */
   .products-grid {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -694,6 +698,8 @@ body.modal-open > *:not(#login) {
   .card img {
     height: 200px;
   }
+
+  /* CART SIDEBAR */
   .cart-sidebar {
     width: 90%;
     right: -100%;
@@ -703,9 +709,12 @@ body.modal-open > *:not(#login) {
     right: 0;
   }
 
+  /* AUTH BOX */
   .authBox {
     width: 90%;
   }
+
+  /* FOOTER */
   .site-footer {
     flex-direction: column;
     gap: 20px;
