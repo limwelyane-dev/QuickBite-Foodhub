@@ -121,7 +121,6 @@ body{
 
 }
 
-/* Input field */
 .searchbar input[type="search"] {
     border: none;
     outline: none;
@@ -131,7 +130,6 @@ body{
     border-radius: 30px;
 }
 
-/* Button */
 .searchbar input[type="submit"] {
     border: none;
     color: #fff;
@@ -293,7 +291,7 @@ body{
   transform: scale(1.1);
   transition: .5s;
 }
-.space {height: 100px;}
+.space {height: 200px;}
 .cart-sidebar{
   position:fixed;
   right:-450px;
