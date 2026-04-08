@@ -11,7 +11,7 @@
     <header class="site-header">
 
     <div class="brand">
-      <h1>QuickBite <span>Foodhub</span></h1>
+      <h1><a href="#" style="text-decoration: none;color: #fff;">QuickBite <span>Foodhub</span></a></h1>
     </div>
 
     <div class="sidehead">
@@ -31,7 +31,7 @@
       </div>
 
       <div class="header-actions">
-        <button id="cartToggle" class="btn cart-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+        <button id="cartToggle" class="btn cart-btn"> Cart (<span id="cartCount">0</span>)</button>
       </div>
     </div>
   </header>
@@ -47,7 +47,7 @@
 
         <div class="ordernow">
           <p>Welcome to our food website, where every dish is made fresh with quality ingredients and crafted <br> to satisfy your cravings. Enjoy delicious meals that are simple, affordable, and full of flavor.</p>
-          <button><a href="#hero" style="text-decoration: none; color: white;">Order Now</a></button>
+          <button><a href="#hero" style="text-decoration: none; color: black;">Order Now</a></button>
         </div>
 
         <div class="icons">
@@ -217,7 +217,7 @@
   </div>
   <div id="receiptModal" class="receipt-modal">
   <div class="receipt-box">
-    <button class="close-btn" onclick="closeReceipt()">✖</button>
+    <button class="close-btn" onclick="closeReceipt()">Close</button>
     
     <h2>Order Receipt</h2>
     <div id="receiptItems"></div>
@@ -236,14 +236,12 @@
       const loginBtn = document.getElementById("loginBtn");
       const loginModal = document.getElementById("login");
 
-      // Show login modal
       loginBtn.addEventListener("click", (e) => {
         e.preventDefault();
         loginModal.style.display = "flex";
         document.body.classList.add("modal-open");
       });
 
-      // Close modal when clicking outside
       loginModal.addEventListener("click", (e) => {
         if (e.target === loginModal) {
           loginModal.style.display = "none";
@@ -281,7 +279,7 @@
         { id: 12, name: "Pan Cakes", price: 50, img: "pancakes.jpg", category: "dessert" },
         { id: 13, name: "Mango Float", price: 150, img: "mangofloat.jpg", category: "dessert" },
         { id: 14, name: "Croissant Sandwich", price: 90, img: "croissant sandwich.jpg", category: "dessert" },
-        { id: 15, name: "Pork bbq", price: 30, img: "barbecue.jpg", category: "pork" },
+        { id: 15, name: "Pork BBQ", price: 30, img: "barbecue.jpg", category: "pork" },
         { id: 16, name: "Pork Adobo", price: 50, img: "Pork-Adobo_2.webp", category: "pork" }
       ];
 
@@ -303,7 +301,6 @@
 
       const checkoutBtn = document.getElementById("checkoutBtn");
 
-      // RECEIPT ELEMENTS
       const receiptModal = document.getElementById("receiptModal");
       const receiptItems = document.getElementById("receiptItems");
       const receiptTotal = document.getElementById("receiptTotal");
@@ -337,7 +334,6 @@
         });
       }
 
-      // CART FUNCTIONS
       function addToCart(id) {
         const item = cart.find(c => c.id === id);
         if (item) item.qty++;
