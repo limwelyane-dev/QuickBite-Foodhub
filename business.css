@@ -608,16 +608,15 @@ form .close-modal {
 }
 @media (max-width: 768px) {
 
-  /* HEADER */
   .site-header {
     flex-direction: column;
     height: auto;
     padding: 10px;
-    text-align: center;
+    justify-content: center;
   }
 
   .navlist ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding: 0;
   }
@@ -635,7 +634,7 @@ form .close-modal {
 
   .headtext {
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .headtext p {
@@ -655,10 +654,8 @@ form .close-modal {
   }
 
   .side_img img {
-    width: 70%;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0;
-    margin-right: -200PX;
   }
 
   .searchbar input[type="search"] {
@@ -688,8 +685,8 @@ form .close-modal {
   }
 
   .platedesign img {
-    width: 100%;
-    max-width: 380px;
+    width: 80%;
+    margin-right: -50px;
   }
 
   .platedesign .fortext {
@@ -701,7 +698,7 @@ form .close-modal {
   }
 
   .menuItem {
-    width: 120px;
+    width: 100px;
     height: 140px;
   }
 
@@ -710,19 +707,13 @@ form .close-modal {
     height: 100%;
   }
 
-
-  .products-grid {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
   .card img {
     height: 200px;
   }
 
 
   .cart-sidebar {
-    width: 90%;
+    width: 60%;
     right: -100%;
   }
 
@@ -736,7 +727,7 @@ form .close-modal {
 
  
   .site-footer {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     text-align: center;
   }
